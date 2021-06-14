@@ -1,0 +1,74 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red98\green0\blue117;\red223\green223\blue223;
+\red52\green52\blue52;\red251\green0\blue255;\red7\green64\blue153;\red152\green0\blue15;\red135\green136\blue100;
+\red37\green0\blue153;\red25\green0\blue135;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c46667\c0\c53333;\cssrgb\c89804\c89804\c89804;
+\cssrgb\c26667\c26667\c26667;\cssrgb\c100000\c0\c100000;\cssrgb\c0\c33333\c66667;\cssrgb\c66667\c6667\c6667;\cssrgb\c60000\c60000\c46667;
+\cssrgb\c20000\c0\c66667;\cssrgb\c13333\c6667\c60000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs22 \cf2 Es 1\
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://localhost:8888/phpMyAdmin/url.php?url=https://dev.mysql.com/doc/refman/5.5/en/select.html"}}{\fldrslt 
+\f1\fs21\fsmilli10660 \cf3 \cb4 SELECT}}
+\f1\fs21\fsmilli10660 \cf5 \cb4  \cf6 *\cf5  \
+\pard\pardeftab720\partightenfactor0
+\cf3 FROM\cf5  \cf7 `students`\cf5  \
+\cf3 WHERE\cf5  \cf7 `date_of_birth`\cf5  {\field{\*\fldinst{HYPERLINK "http://localhost:8888/phpMyAdmin/url.php?url=https://dev.mysql.com/doc/refman/5.5/en/string-comparison-functions.html#operator_like"}}{\fldrslt \cf3 LIKE}} \cf8 \'911990-%\'92\cf2 ;\cf8 \
+\
+\cf2 Es 2\
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://localhost:8888/phpMyAdmin/url.php?url=https://dev.mysql.com/doc/refman/5.5/en/select.html"}}{\fldrslt \cf3 SELECT}}\cf5  \cf6 *\cf5  \
+\pard\pardeftab720\partightenfactor0
+\cf3 FROM\cf5  \cf7 `courses`\cf5  \
+\cf3 WHERE\cf5  \cf7 `cfu`\cf6 >\cf5  \cf8 \'9210\
+\
+\cf2 Es 3\
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://localhost:8888/phpMyAdmin/url.php?url=https://dev.mysql.com/doc/refman/5.5/en/select.html"}}{\fldrslt \cf3 SELECT}}\cf5  \cf6 *\cf5  ,TIMESTAMPDIFF\cf9 ({\field{\*\fldinst{HYPERLINK "http://localhost:8888/phpMyAdmin/url.php?url=https://dev.mysql.com/doc/refman/5.5/en/date-and-time-types.html"}}{\fldrslt \cf10 YEAR}}\cf5 ,\cf7 `date_of_birth`\cf5 , CURDATE\cf9 ())\cf5  \cf3 AS\cf5  age \
+\pard\pardeftab720\partightenfactor0
+\cf3 FROM\cf5  \cf7 `students`\cf5  \
+\cf3 WHERE\cf5  TIMESTAMPDIFF\cf9 ({\field{\*\fldinst{HYPERLINK "http://localhost:8888/phpMyAdmin/url.php?url=https://dev.mysql.com/doc/refman/5.5/en/date-and-time-types.html"}}{\fldrslt \cf10 YEAR}}\cf5 ,\cf7 `date_of_birth`\cf5 , CURDATE\cf9 ())\cf5  \cf6 >\cf5  \cf8 '30'\cf5  \
+\cf3 ORDER\cf5  \cf3 BY\cf5  TIMESTAMPDIFF\cf9 ({\field{\*\fldinst{HYPERLINK "http://localhost:8888/phpMyAdmin/url.php?url=https://dev.mysql.com/doc/refman/5.5/en/date-and-time-types.html"}}{\fldrslt \cf10 YEAR}}\cf5 ,\cf7 `date_of_birth`\cf5 , CURDATE\cf9 ())\cf5  \cf3 ASC\cf2 ;\cf5 \
+\cf2 \
+Es 4\
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://localhost:8888/phpMyAdmin/url.php?url=https://dev.mysql.com/doc/refman/5.5/en/select.html"}}{\fldrslt \cf3 SELECT}}\cf5  \cf7 `name`\cf5 ,\cf7 `period`\cf5 ,\cf7 `year`\cf5  \
+\pard\pardeftab720\partightenfactor0
+\cf3 FROM\cf5  \cf7 `courses`\cf5  \
+\cf3 WHERE\cf5  \cf7 `period`\cf5  \cf6 =\cf5  \cf8 'I semestre'\cf5  \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://localhost:8888/phpMyAdmin/url.php?url=https://dev.mysql.com/doc/refman/5.5/en/logical-operators.html#operator_and"}}{\fldrslt \cf3 AND}} \cf7 `year`{\field{\*\fldinst{HYPERLINK "http://localhost:8888/phpMyAdmin/url.php?url=https://dev.mysql.com/doc/refman/5.5/en/string-comparison-functions.html#operator_like"}}{\fldrslt \cf3 LIKE}}\cf5  \cf8 \'911\'92\cf2 ;\
+\
+Es 5\
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://localhost:8888/phpMyAdmin/url.php?url=https://dev.mysql.com/doc/refman/5.5/en/select.html"}}{\fldrslt \cf3 SELECT}}\cf5  \cf7 `date`\cf5 ,\cf7 `hour`\cf5  \
+\pard\pardeftab720\partightenfactor0
+\cf3 FROM\cf5  \cf7 `exams`\cf5  \
+\cf3 WHERE\cf5  \cf7 `date`\cf5  \cf6 =\cf5  \cf8 '2020-06-20'\cf5  \
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://localhost:8888/phpMyAdmin/url.php?url=https://dev.mysql.com/doc/refman/5.5/en/logical-operators.html#operator_and"}}{\fldrslt \cf3 AND}} \cf7 `hour`\cf5  \cf6 >=\cf5  \cf8 \'9214:%'\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 Es 6\
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://localhost:8888/phpMyAdmin/url.php?url=https://dev.mysql.com/doc/refman/5.5/en/select.html"}}{\fldrslt \cf3 SELECT}}\cf5  \cf7 `level`\cf5  \
+\pard\pardeftab720\partightenfactor0
+\cf3 FROM\cf5  \cf7 `degrees`\cf5  \
+\cf3 WHERE\cf5  \cf7 `level`\cf5  \cf6 =\cf5  \cf8 \'91magistrale\'92\cf2 ;\
+\
+Es 7\
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://localhost:8888/phpMyAdmin/url.php?url=https://dev.mysql.com/doc/refman/5.5/en/select.html"}}{\fldrslt \cf3 SELECT}}\cf5  {\field{\*\fldinst{HYPERLINK "http://localhost:8888/phpMyAdmin/url.php?url=https://dev.mysql.com/doc/refman/5.5/en/group-by-functions.html#function_count"}}{\fldrslt \cf3 COUNT}}\cf9 (\cf6 *\cf9 )\cf5  \cf3 AS\cf5  \cf7 `Numero_dipartimenti`\cf5  \
+\pard\pardeftab720\partightenfactor0
+\cf3 FROM\cf5  \cf7 `departments`\cf2 ;\
+\
+Es 8\
+\pard\pardeftab720\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://localhost:8888/phpMyAdmin/url.php?url=https://dev.mysql.com/doc/refman/5.5/en/select.html"}}{\fldrslt \cf3 SELECT}}\cf5  \cf6 *\cf5  \
+\pard\pardeftab720\partightenfactor0
+\cf3 FROM\cf5  \cf7 `teachers`\cf5  \
+\cf3 WHERE\cf5  \cf7 `phone`\cf5  {\field{\*\fldinst{HYPERLINK "http://localhost:8888/phpMyAdmin/url.php?url=https://dev.mysql.com/doc/refman/5.5/en/comparison-operators.html#operator_is"}}{\fldrslt \cf3 IS}} \cf11 NULL\cf2 ;}
